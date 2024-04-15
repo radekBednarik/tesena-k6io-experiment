@@ -5,7 +5,7 @@ export const options = {
     browser: {
       executor: "constant-vus",
       exec: "browserTest",
-      vus: 1,
+      vus: 5,
       duration: "20s",
       options: {
         browser: {
@@ -24,7 +24,7 @@ export async function browserTest() {
 
     const bttnContactUs = page.locator("div[class *= 'menu__secondary'] ul li");
     const bttnGDPRAllowNecessary = page.locator(
-      "button[class *= 'decline-all']"
+      "button[class *= 'decline-all']",
     );
 
     await bttnGDPRAllowNecessary.click();
