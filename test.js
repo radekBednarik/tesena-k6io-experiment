@@ -17,7 +17,7 @@ export const options = {
 };
 
 export async function browserTest() {
-  const page = await browser.newPage();
+  const page = browser.newPage();
 
   try {
     await page.goto("https://tesena.com");
@@ -33,8 +33,8 @@ export async function browserTest() {
     await bttnContactUs.click();
     await navPromise;
 
-    await page.waitForLoadState("domcontentloaded");
+    page.waitForLoadState("domcontentloaded");
   } finally {
-    await page.close();
+    page.close();
   }
 }
