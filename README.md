@@ -12,6 +12,7 @@ K6 app is written in high performant [Go](https://go.dev/) language. Test themse
 
 - K6 open source - [HERE](https://grafana.com/docs/k6/latest/)
 - Grafana Cloud - [HERE](https://grafana.com/docs/grafana-cloud/) if you want to check it out - you can have free registration and try sending test results to the Grafana dashboards, etc. Or run tests directly from cloud. See docs of k6 about how to do that.
+- Read about the results and there meaning [HERE](https://grafana.com/docs/grafana-cloud/k6/analyze-results/get-performance-insights/)
 
 ## How to run
 
